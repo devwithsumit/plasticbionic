@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Bionic</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @keyframes load {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes shift {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+
+    #main {
+        /* animation: load cubic-bezier(0.645, 0.045, 0.355, 1) 1.5s 1; */
+    }
+</style>
+
+<body class="overflow-hidden">
+    <nav class="w-screen h-[20vh] fixed z-[999]">
+        <div class="uppernav hidden lg:flex z-1000 group  w-screen h-[10vh] items-end justify-between
+            border-b-zinc-500/30 border-b-[.5px]">
+            <div class="blankarea text-sm font-light text-white w-full h-1/2 pointer-events-none
+            absolute top-0 left-0 flex items-center justify-between px-[3vw] 
+            group-hover:opacity-0 ease-in-out duration-300 z-0">
+                <h1>Change view</h1>
+                <i class="ri-add-line"></i>
+            </div>
+            <a
+                class="nav1 fullscreen bg-white w-1/3 h-[0px] cursor-pointer group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw] relative">
+                <h1 class="text-sm font-light opacity-0 group-hover:opacity-100 ease-in-out duration-300">Fullscreen
+                </h1>
+                <div class="indicator absolute w-full h-[3px] bg-white left-0 bottom-0 translate-y-1/2
+                group-hover:opacity-0 ease-in-out duration-100"></div>
+            </a>
+            <a href="/index(grid).html"
+                class="nav1 backdrop-blur-sm bg-zinc-500/30 w-1/3 h-[0px] border-r-zinc-600 border-r-[.5px] group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw]">
+                <h1 class="text-sm font-light text-white opacity-0 group-hover:opacity-100 ease-in-out duration-300">
+                    Grid</h1>
+            </a>
+            <a href="/index(list).html"
+                class="nav1 backdrop-blur-sm bg-zinc-500/30 w-1/3 h-[0px] group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw]">
+                <h1 class="text-sm font-light text-white opacity-0 group-hover:opacity-100 ease-in-out duration-300">
+                    List</h1>
+            </a>
+        </div>
+        <div class="lowernav text-sm font-light w-screen h-[10vh] lg:h-[15vh] flex items-center justify-between">
+            <div class="navleft h-full w-1/2 flex items-center pl-[6vw] lg:pl-[3vw]">
+                <a href="" class="text-white">P</a>
+            </div>
+            <div class="navright text-white w-1/2 h-full
+             flex items-center justify-end gap-[8vw] pr-[6vw] lg:pr-[3vw]">
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-white
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200">Work</a>
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-white
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200">Studio</a>
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-white
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200">Instagram</a>
+                <h2 class="border-b-[1px] border-b-white lg:hidden h-[18px]">Menu</h2>
+            </div>
+        </div>
+    </nav>
+    <div id="main" class="w-screen h-full text-white">
+        <div data-scroll data-scroll-speed="-2" class="page page1 w-screen h-screen bg-[url('https://dev.plasticbionic.com/wp-content/uploads/36DAYSOFTYPE_Typography_Illustration_2023_19.jpg')] bg-center bg-cover
+        flex items-center justify-center overflow-hidden relative">
+            <h1 data-scroll data-scroll-speed="-7"
+                class="group text-[12vw] leading-[13vw] w-[50%] text-center cursor-pointer pb-10 absolute">
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">36
+                    Days</span>
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">of
+                    type III</span>
+                <p
+                    class="text-white opacity-0 uppercase font-light text-[8px] sm:text-[10px] tracking-wider bottom-0 w-full text-center
+                    absolute left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:opacity-50 ease-in-out duration-500 leading-tight">
+                    art
+                    direction,
+                    cgi,
+                    illustration,
+                    typography</p>
+            </h1>
+        </div>
+        <div class="page page2 w-screen h-screen overflow-hidden relative flex items-center justify-center">
+            <div data-scroll data-scroll-speed="-2" class="bgoverlay absolute left-0 top-0 w-full h-[120vh] object-center bg-[url('https://dev.plasticbionic.com/wp-content/uploads/DAYS_Illustration_A.jpg')]
+            bg-center bg-cover lg:bg-contain flex items-center justify-center"></div>
+            <h1 data-scroll data-scroll-speed="-13"
+                class="group text-[12vw] leading-[13vw] w-[50%] text-center cursor-pointer pb-10 absolute top-[20%]">
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">
+                    Days</span>
+                <p
+                    class="text-white opacity-0 uppercase font-light text-[8px] sm:text-[10px] tracking-wider bottom-0 w-4/5 text-center
+                    absolute left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:opacity-50 ease-in-out duration-500 leading-tight">
+                    art
+                    direction,
+                    cgi,graphic design
+                    illustration,</p>
+            </h1>
+        </div>
+        <div class="page page3 w-screen h-screen flex items-center justify-center overflow-hidden relative">
+            <div data-scroll data-scroll-speed="-2" class="bgoverlay absolute left-0 top-0 w-full h-[100vh]
+            bg-[url('https://dev.plasticbionic.com/wp-content/uploads/EXACORALLA_Illustration_1d.jpg')] 
+            bg-center bg-cover
+            flex items-center justify-center"></div>
+            <h1 data-scroll data-scroll-speed="-13"
+                class="group text-[12vw] leading-[13vw] w-[50%] text-center cursor-pointer pb-10 absolute top-[20%]">
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">
+                    Exacoralla</span>
+                <p
+                    class="text-white opacity-0 uppercase font-light text-[8px] sm:text-[10px] tracking-wider bottom-0 w-4/5 text-center
+                    absolute left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:opacity-50 ease-in-out duration-500 leading-tight">
+                    art
+                    direction,
+                    cgi,
+                    illustration,</p>
+            </h1>
+        </div>
+        <div class="page page4 w-screen h-screen flex items-center justify-center overflow-hidden relative">
+            <div data-scroll data-scroll-speed="-2" class="bgoverlay absolute left-0 top-0 w-full h-[100vh]
+            bg-[url('https://dev.plasticbionic.com/wp-content/uploads/GOOGLE_Wallpaper_Illustration_H.jpg')] 
+            bg-center bg-cover
+            flex items-center justify-center"></div>
+            <h1 data-scroll data-scroll-speed="-13"
+                class="group text-[12vw] leading-[13vw] w-[50%] text-center cursor-pointer pb-10 absolute top-[20%]">
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">
+                    Google</span>
+                <p
+                    class="text-white opacity-0 uppercase font-light text-[8px] sm:text-[10px] tracking-wider bottom-0 w-4/5 text-center
+                    absolute left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:opacity-50 ease-in-out duration-500 leading-tight">
+                    art
+                    direction,
+                    cgi,
+                    illustration,</p>
+            </h1>
+        </div>
+        <div class="page page5 w-screen h-screen flex items-center justify-center overflow-hidden relative">
+            <div data-scroll data-scroll-speed="-2" class="bgoverlay absolute left-0 top-0 w-full h-[100vh]
+            bg-[url('https://dev.plasticbionic.com/wp-content/uploads/HUBLOT_Corporate_Illustration_1_H.jpg')] 
+            bg-center bg-cover
+            flex items-center justify-center"></div>
+            <h1 data-scroll data-scroll-speed="-13"
+                class="group text-[12vw] leading-[13vw] w-[50%] text-center cursor-pointer pb-10 absolute top-[20%]">
+                <span
+                    class=" after:h-[3px] lg:after:h-2 after:bg-white after:absolute after:left-0 after:bottom-0 relative
+                    after:w-full after:origin-right after:group-hover:scale-x-100 after:scale-x-0 after:group-hover:origin-left after:transition-transform after:duration-300">
+                    Hublot</span>
+                <p
+                    class="text-white opacity-0 uppercase font-light text-[8px] sm:text-[10px] tracking-wider bottom-0 w-4/5 text-center
+                    absolute left-1/2 -translate-x-1/2 translate-y-1/2 group-hover:opacity-50 ease-in-out duration-500 leading-tight">
+                    art
+                    direction,
+                    cgi,
+                    illustration,</p>
+            </h1>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

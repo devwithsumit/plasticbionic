@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Bionic</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @keyframes load {
+        from {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes shift {
+        from {
+            transform: translateX(-100%);
+        }
+    }
+
+    #main {
+        animation: load cubic-bezier(0.645, 0.045, 0.355, 1) 1.5s 1;
+    }
+</style>
+
+<body>
+    <nav class="w-screen h-[20vh] fixed z-[1000]">
+        <div
+            class="uppernav hidden lg:flex z-1000 group  w-screen h-[10vh] items-end justify-between border-b-zinc-500/30 border-b-[.5px]">
+            <div class="blankarea text-sm font-light text-black w-full h-1/2 pointer-events-none
+                absolute top-0 left-0 flex items-center justify-between px-[3vw] 
+                group-hover:opacity-0 ease-in-out duration-300 z-0">
+                <h1>Change view</h1>
+                <i class="ri-add-line"></i>
+            </div>
+            <a href="/index.html"
+                class="nav1 bg-zinc-500/30 backdrop-blur-sm w-1/3 h-0 group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw]">
+                <h1 class="text-sm font-light opacity-0 group-hover:opacity-100 ease-in-out duration-300">Fullscreen
+                </h1>
+            </a>
+            <a
+                class="nav1 bg-black w-1/3 h-0 border-r-zinc-600 cursor-pointer border-r-[.5px] group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw] relative">
+                <h1 class="text-sm font-light text-white opacity-0 group-hover:opacity-100 ease-in-out duration-300">
+                    Grid</h1>
+                <div class="indicator absolute w-full h-[3px] bg-black left-0 bottom-0 translate-y-1/2
+                group-hover:opacity-0 ease-in-out duration-100"></div>
+            </a>
+            <a href="/index(list).html"
+                class="nav1 bg-zinc-500/30 backdrop-blur-sm w-1/3 h-0 group-hover:h-full ease-in-out duration-300 flex items-center pl-[3vw]">
+                <h1 class="text-sm font-light text-white opacity-0 group-hover:opacity-100 ease-in-out duration-300">
+                    List</h1>
+            </a>
+        </div>
+        <div
+            class="lowernav text-black text-sm font-light w-screen h-[10vh] lg:h-[15vh] flex items-center justify-between">
+            <div class="navleft h-full w-1/2 flex items-center pl-[6vw] lg:pl-[3vw]">
+                <a href="">P</a>
+            </div>
+            <div class="navright w-1/2 h-full
+                 flex items-center justify-end gap-[8vw] pr-[6vw] lg:pr-[3vw]">
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-black
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200 border-b-[1px] border-b-black h-[18px]">Work</a>
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-black
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200">Studio</a>
+                <a href=""
+                    class="hidden lg:block after:w-full after:h-[1px] after:absolute after:left-0 after:bottom-0 after:bg-black
+                    relative after:scale-x-0 after:origin-right after:hover:scale-x-100 after:transition-transform after:hover:origin-left after:duration-200">Instagram</a>
+                <h2 class="border-b-[1px] border-b-black lg:hidden h-[18px]">Menu</h2>
+            </div>
+        </div>
+    </nav>
+    <div id="main" class="w-screen h-full bg-white">
+        <div
+            class="page page1 w-screen h-full flex items-center justify-center flex-col overflow-hidden relative px-8 pt-[30vh] lg:pt-[20vh] lg:flex-row lg:gap-10">
+            <div class="boxes w-full h-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/fly-images/2362/36DAYSOFTYPE_Typography_Illustration_2023_19-1000x1000-c.jpg"
+                    alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        36 Days of <br> type III
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi,
+                        illustration,
+                        typography</p>
+                </div>
+            </div>
+            <div class="boxes w-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/DAYS_Illustration_A.jpg" alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        Days
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi, graphic design
+                        illustration</p>
+                </div>
+            </div>
+            <div class="boxes w-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/fly-images/2360/EXACORALLA_Illustration_1d-1600x1200-c.jpg"
+                    alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        Exacoralla
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi,
+                        illustration,</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="page page2 w-screen h-full flex items-center justify-center flex-col overflow-hidden relative px-8  lg:flex-row lg:gap-10">
+            <div class="boxes w-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/fly-images/2262/BARRIERE_Illustration_ArtDirection_HOME4-1600x1200-c.jpg"
+                    alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        Barrie
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi,
+                        illustration,
+                        typography</p>
+                </div>
+            </div>
+            <div class="boxes w-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/fly-images/2279/YETI_Illustration_ArtDirection_Home2-1600x900-c.jpg"
+                    alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        Yeti Cycles
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi, graphic design
+                        illustration</p>
+                </div>
+            </div>
+            <div class="boxes w-full flex items-center justify-center flex-col mb-10">
+                <img class="h-full w-full object-cover"
+                    src="https://dev.plasticbionic.com/wp-content/uploads/fly-images/2358/HARVARDBUSINESSREVIEW_Illustration_7-1000x1000-c.jpg"
+                    alt="">
+                <div class=" title w-full flex items-center  py-3">
+                    <h1 class=" group text-[20px] leading-tight w-[30%] cursor-pointer">
+                        Havard Businnes Review
+                    </h1>
+                    <p
+                        class="text-slate-500 opacity-0.5 uppercase font-light text-[10px] sm:text-[10px] tracking-wider leading-tight">
+                        art
+                        direction,
+                        cgi,
+                        illustration,</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
